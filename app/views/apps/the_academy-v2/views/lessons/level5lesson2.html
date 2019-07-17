@@ -1,0 +1,105 @@
+{% extends currentApp.filePaths.layoutsDir + "default.html" %}
+{% block main_content %}
+
+<main class="lesson" data-level="5" data-lesson="2" id="content" role="main" tabindex="-1">
+    <header>
+<div class="grid-row">
+    <div class="column-two-thirds">
+<div class="progress-wrap progress" data-progress-percent="10">
+  <div class="progress-bar progress"></div>
+</div>
+        <p class="form-hint">Question <span class="current">1</span> of <span class="total">10</span></p>
+    </div>
+</div>
+    </header>    
+
+    <section  id="1" data-answer="1" class="question">
+        <div class="grid-row">
+            <div class="column-two-thirds">
+ <div class="hgroup">
+      <h1 class="heading-xlarge">
+What happens to your levy credit after 2 years?            </h1>
+            
+            <form>
+                <div class="form-group">
+                    <div class="multiple-choice">
+                            <input id="q1" type="radio" name="radio-group" value="1">
+                            <label for="q1">Unspent levy automatically gets returned to government
+                            </label>
+                    </div>
+                    <div class="multiple-choice">
+                            <input id="q2" type="radio" name="radio-group" value="2">
+                            <label for="q2">Unspent levy is given to a supply chain pool of employers to use
+                            </label>
+                    </div>
+                    <div class="multiple-choice">
+                            <input id="q3" type="radio" name="radio-group" value="3">
+                            <label for="q3">A penalty is charged against your levy balance
+                            </label>
+                    </div>
+                </div>
+                <button class="button submit">Submit answer</button>
+            </form>
+    </div>
+
+            <div class="success-summary">
+    <h3 class="heading-medium">Correct</h3>
+    <p></p>
+    <a class="button next">Next question</a>
+</div>
+        
+<div class="error-summary">
+    <h3 class="heading-medium">Incorrect</h3>
+    <p></p>
+    <a class="button next">Next question</a>
+</div>            
+            </div>
+        </div>
+</section>
+    <section  id="2" data-answer="3" class="question">
+        <div class="grid-row">
+            <div class="column-two-thirds">
+ <div class="hgroup">
+      <h1 class="heading-xlarge">
+How is your levy credit calculated?           </h1>
+            
+            <form>
+                <div class="form-group">
+                    <div class="multiple-choice">
+                            <input id="q4" type="radio" name="radio-group" value="1">
+                            <label for="q4">By taking your levy contribution and timesing it by your English %
+                            </label>
+                    </div>
+                    <div class="multiple-choice">
+                            <input id="q5" type="radio" name="radio-group" value="2">
+                            <label for="q5">By taking your levy contribution and adding 10% top-up
+                            </label>
+                    </div>
+                    <div class="multiple-choice">
+                            <input id="q6" type="radio" name="radio-group" value="3">
+                            <label for="q6">By taking your levy declaration timesing it by your English % then adding 10% to it
+                            </label>
+                    </div>
+                </div>
+                <button class="button submit">Submit answer</button>
+            </form>
+    </div>
+
+            <div class="success-summary">
+    <h3 class="heading-medium">Correct</h3>
+    <p></p>
+    <a class="button next">Next question</a>
+</div>
+        
+<div class="error-summary">
+    <h3 class="heading-medium">Incorrect</h3>
+    <p></p>
+    <a class="button next">Next question</a>
+</div>            
+            </div>
+        </div>
+</section>
+    
+
+</main><!-- / #content -->
+{% endblock %}

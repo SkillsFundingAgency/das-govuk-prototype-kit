@@ -1,0 +1,62 @@
+{% extends currentApp.filePaths.layoutsDir + "default.html" %}
+{% block main_content %}
+
+<main class="lesson" data-level="5" data-lesson="4" id="content" role="main" tabindex="-1">
+    <header>
+<div class="grid-row">
+    <div class="column-two-thirds">
+<div class="progress-wrap progress" data-progress-percent="10">
+  <div class="progress-bar progress"></div>
+</div>
+        <p class="form-hint">Question <span class="current">1</span> of <span class="total">10</span></p>
+    </div>
+</div>
+    </header>    
+
+    <section  id="1" data-answer="3" class="question">
+        <div class="grid-row">
+            <div class="column-two-thirds">
+ <div class="hgroup">
+      <h1 class="heading-xlarge">
+How many hours does an apprentice need to spend working in England            </h1>
+            
+            <form>
+                <div class="form-group">
+                    <div class="multiple-choice">
+                            <input id="q1" type="radio" name="radio-group" value="1">
+                            <label for="q1">100%
+                            </label>
+                    </div>
+                    <div class="multiple-choice">
+                            <input id="q2" type="radio" name="radio-group" value="2">
+                            <label for="q2">Any amout of time
+                            </label>
+                    </div>
+                    <div class="multiple-choice">
+                            <input id="q3" type="radio" name="radio-group" value="3">
+                            <label for="q3">50%
+                            </label>
+                    </div>
+                </div>
+                <button class="button submit">Submit answer</button>
+            </form>
+    </div>
+
+            <div class="success-summary">
+    <h3 class="heading-medium">Correct</h3>
+    <p>Apprentices need to spend at least 50% of their time physically working in England to qualify for government funding</p>
+    <a class="button next">Next question</a>
+</div>
+        
+<div class="error-summary">
+    <h3 class="heading-medium">Incorrect</h3>
+    <p>Apprentices need to spend at least 50% of their time physically working in England to qualify for government funding</p>
+    <a class="button next">Next question</a>
+</div>            
+            </div>
+        </div>
+</section>
+
+
+</main><!-- / #content -->
+{% endblock %}

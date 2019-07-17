@@ -1,0 +1,74 @@
+{% extends currentApp.filePaths.layoutsDir + "default.html" %}
+{% block main_content %}
+
+<main class="forecast-name-forecast" id="content" role="main" tabindex="-1">
+    {% include "includes/link-back.html" %}
+
+    <div class="error-summary hidden" role="alert" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+      <h2 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+Errors to fix
+        </h2>
+
+
+      <ul class="error-summary-list">
+        <li><a href="#contact-email">Make sure you have entered a name</a></li>
+      </ul>
+
+    </div>
+    
+    <div class="grid-row">
+    <div class="column-two-thirds">
+        <div class="hgroup form-group">
+           <h1 class="heading-xlarge">
+Name this estimate            </h1>        
+            <p>You can name your funding estimates.</p>
+        </div>
+      </div>
+    </div>
+
+<div class="grid-row">
+    <div class="column-two-thirds">
+        
+<form>
+  <div class="form-group">
+    <fieldset>
+
+      <legend>
+        <h1 class="heading-medium">
+Do you want to save this using a name of your choice?
+
+        </h1>
+      </legend>
+
+      <div class="multiple-choice" data-target="contact-by-email">
+        <input id="example-contact-by-email" type="radio" name="radio-contact-group" value="Yes">
+        <label for="example-contact-by-email">Yes, I want to name my estimate</label>
+      </div>
+      <div class="panel panel-border-narrow js-hidden" id="contact-by-email">
+        <label class="form-label-bold" for="contact-email">Estimate name
+          <span class="error-message hidden">Make sure you have entered a name</span>
+          </label>
+        <input class="form-control" name="contact-email" type="text" id="contact-email">
+      </div>
+
+      <div class="multiple-choice" data-target="contact-by-phone">
+        <input id="example-contact-by-phone" type="radio" name="radio-contact-group" value="No">
+        <label for="example-contact-by-phone">No, save with a default name</label>
+      </div>
+    
+
+    </fieldset>
+    </div>
+        <a class="button" href="forecast-transfer?msg=saved">Continue</a>
+</form>
+
+        
+        
+    </div>
+    <div class="column-third">
+    </div>
+</div>
+
+</main><!-- / #content -->
+{% endblock %}
